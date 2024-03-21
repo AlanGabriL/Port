@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Syne:wght@400..800&display=swap');
+
+/* Reset geral */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Syne', sans-serif;
+}
+:root{
+  --PrimaryColor: #226fe3;
+  --White: #ffffff;
+  --Black: #333333;
+  --Gray: #d4d4d4;
+}
+
+/* Botão primary */
+.Primary {
+  padding: 6px 12px;
+  background-color: var(--PrimaryColor);
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.Primary:hover{
+  opacity: 0.8;
+  transform: scale(0.95);
+}
+/* Botão outline */
+.Outline {
+  padding: 6px 12px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid var(--White);
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.5s all;
+  width: max-content;
+}
+.Outline:hover{
+  background-color: var(--White);
+  color: var(--PrimaryColor);
+}
+
+
+/* Text com animação */
+.TextButton {
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.TextButton:hover{
+  transform: scale(0.95);
+  color: var(--PrimaryColor);
+}
+
+
+nav{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 2px 2px 8px #33333361;
+  background-color: var(--White);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#Options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 200px;
+}
+
+header{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--PrimaryColor);
+  padding: 20px;
+  align-items: center;
+}
+
+#DivHeader {
+  width: max(400px, 40%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#DivHeader > p {
+  color: var(--Gray);
+}
+
+h1#TextTitle {
+  color: var(--White);
+  font-size: 40px;
+  word-wrap: break-word;
+}
+
+#ProvaSocial{
+  width: 100%;
+  height: 200px;
+  background-color: var(--Black);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.ContentProvas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ContentProvas > img {
+  width: 50px;
+}
+
+.ContentProvas > p {
+  color: var(--White);
+  font-size: 18px;
+  width: 250px;
+  text-align: center;
+}
